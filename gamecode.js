@@ -48,7 +48,7 @@ function letsplay()
         else
         displayscore(ps, cs, count, tie )
     }
-    else
+    else if(pc === "paper" && comp ==="rock" ||pc === "scissors" && comp ==="paper" || pc === "rock" && comp ==="scissors")
     {
         ps++
         let check= confirm(`Your choice = ${pc} \n Computer's choice = ${comp}\n You win this round! \n click OK to replay and Cancel display scoreboard and exit`);
@@ -64,7 +64,7 @@ function letsplay()
 function displayscore()
 {
     if(ps>cs)
-    alert(`number of rounds played = ${count} \n Your score = ${ps} \n Computer's score = ${cs}\n Games tied = ${tie}\n Congrats! You are the final letsplay!`);
+    alert(`number of rounds played = ${count} \n Your score = ${ps} \n Computer's score = ${cs}\n Games tied = ${tie}\n Congrats! You are the final winner!`);
 
     if(cs>ps)
     alert(`number of rounds played = ${count} \n Your score = ${ps} \n Computer's score = ${cs}\n Games tied = ${tie}\n Computer wins, better luck next time..`);
