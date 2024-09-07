@@ -35,7 +35,7 @@ function letsplay()
         else
         displayscore(ps, cs, count, tie )
     }
-    else if(comp === "paper" && pc ==="rock" ||comp === "scissors" && pc ==="paper" || comp === "rock" && pc ==="scissors")
+    else if(comp === "paper" && pc ==="rock" ||comp === "scissor" && pc ==="paper" || comp === "rock" && pc ==="scissor")
     { 
         cs++;
         let check= confirm(`Your choice = ${pc} \n Computer's choice = ${comp} \n Computer wins this round!\n click OK to replay and Cancel to display scoreboard and exit`);
@@ -48,7 +48,7 @@ function letsplay()
         else
         displayscore(ps, cs, count, tie )
     }
-    else if(pc === "paper" && comp ==="rock" ||pc === "scissors" && comp ==="paper" || pc === "rock" && comp ==="scissors")
+    else
     {
         ps++
         let check= confirm(`Your choice = ${pc} \n Computer's choice = ${comp}\n You win this round! \n click OK to replay and Cancel display scoreboard and exit`);
