@@ -64,7 +64,7 @@ function letsplay()
 function displayscore()
 {
     if(ps>cs)
-    alert(`number of rounds played = ${count} \n Your score = ${ps} \n Computer's score = ${cs}\n Games tied = ${tie}\n Congrats! You are the final letsplay!`);
+    alert(`number of rounds played = ${count} \n Your score = ${ps} \n Computer's score = ${cs}\n Games tied = ${tie}\n Congrats! You are the final winner!`);
 
     if(cs>ps)
     alert(`number of rounds played = ${count} \n Your score = ${ps} \n Computer's score = ${cs}\n Games tied = ${tie}\n Computer wins, better luck next time..`);
