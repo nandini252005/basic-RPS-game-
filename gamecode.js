@@ -1,4 +1,4 @@
-let count =1; let ps =0; let cs=0; let tie=0;
+let count =0; let ps =0; let cs=0; let tie=0;
 
 function letsplay()
 {
